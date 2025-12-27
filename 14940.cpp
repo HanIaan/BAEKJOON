@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <vector>
 #include <queue>
 
@@ -42,7 +41,6 @@ int main() {
         }
     }
     
-    bool target_close = true;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             cout << grid[i][j] - 2;
@@ -50,7 +48,6 @@ int main() {
             else cout << endl;
         }
     }
-
 
     return 0;
 }
