@@ -33,11 +33,12 @@ int main() {
         if (count == 2)
             break;
     }
-    
+
     int max = *ms_num.rbegin(), min = *ms_num.begin();
     auto mid = next(ms_num.begin(), (ms_num.size() + 1) / 2 - 1);
     int size = ms_num.size();
     int avg = round((double)sum / size);
+    
     cout << (avg == 0 ? 0 : avg) << "\n";
     cout << *mid << "\n";
     cout << freqValue << "\n";

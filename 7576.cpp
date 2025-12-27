@@ -2,13 +2,7 @@
 #include <string>
 #include <vector>
 #include <queue>
-
 using namespace std;
-
-void check(vector<vector<int>> v, int N, int M) {
-
-
-}
 
 int main() {
     int N, M, count = 0, zero_count = 0;

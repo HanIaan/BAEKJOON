@@ -1,12 +1,11 @@
-#include <iostream>
-#include <unordered_set>
-#include <string>
-#define MAX 100000
+#include <bits/stdc++.h>
 using namespace std;
 
-
 int main() {
-    int N, count = 0, i = 0;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int N, count = 0;
     string chat;
     unordered_set<string> name;
     cin >> N;       // N개의 기록 수 입력
@@ -14,14 +13,14 @@ int main() {
         bool valid = true;
         cin >> chat;
         if (chat == "ENTER")
-            name.clear();      // 배열 초기화
+            name.clear();      // 해시 초기화
         else {
             if (name.find(chat) != name.end())
                 valid = false;      // 중복이면 valid false
 
             if (valid) {
                 count++;        // 중복 아니면 count 증가
-                name.insert(chat);      // 중복 아니면 배열에 이름 넣기
+                name.insert(chat);      // 중복 아니면 해시에 이름 넣기
             }
         }
     }
