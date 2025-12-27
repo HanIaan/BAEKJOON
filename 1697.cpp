@@ -42,11 +42,11 @@ int main() {
             }
         }
         
-        if (n == K && K_count > grid[n]) 
-            K_count = grid[n];
+        if (n == K)
+            break;
     }
 
-    cout << K_count;
+    cout << grid[K];
     
     return 0;
 }
