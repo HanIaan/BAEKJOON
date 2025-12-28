@@ -17,13 +17,10 @@ int main() {
     for (int i = N; i < N + M; i++) 
         cin >> name[i];
     sort(name.begin(), name.end());
-    string target = "";
     for (int i = 0; i < N + M - 1; i++) {
-        if (target == name[i]) continue;
-        if (name[i] == name[i + 1]) {
-            target = name[i];
-            t_name.push_back(name[i]);
-        }
+        if (name[i] == name[i + 1]) 
+            t_name.push_back(name[i++]);
+        
     }
     cout << t_name.size() << endl;
     for (auto it = t_name.begin(); it != t_name.end(); ++it)
