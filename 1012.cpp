@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 using namespace std;
 
 int main() {
@@ -13,7 +14,7 @@ int main() {
         int N, M, K, count = 0;
         cin >> M >> N >> K;
         vector<vector<int>> v(N, vector<int>(M, 0));
-        vector<pair<int, int>> v1(K);
+        vector<pair<int, int>> v1;
         queue<pair<int, int>> q;
         int pr[4] = {-1, 1, 0, 0};
         int pc[4] = {0, 0, -1, 1};
